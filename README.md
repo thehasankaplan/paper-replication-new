@@ -2,25 +2,46 @@
 
 This directory is a **self-contained snapshot** of the paper-facing artifacts and the **frozen run summaries**
 used to produce the tables/figures reported in the paper.
+# Indirect Prompt Injection in IAM Policy Copilots: A Structured-Output Benchmark for Least-Privilege Violations
 
-## What this artifact contains
+This repository is the **replication package** for the paper:
 
+**Indirect Prompt Injection in IAM Policy Copilots: A Structured-Output Benchmark for Least-Privilege Violations**
+
+It is designed to be **reproducible without calling any model APIs** by providing **frozen run summaries** (CSV/JSON) for the runs reported in the paper, along with scripts to regenerate the paper tables and figures.
+
+## What this package contains
+
+### 1) Paper-facing outputs
 - `paper/`  
-  Camera-ready inputs for the manuscript (LaTeX-ready tables, CSVs, and curated qualitative examples).
-
+  Paper-facing artifacts such as LaTeX tables (`.tex`), CSVs used in tables, and curated qualitative examples.
 - `paper_figures/`  
-  PDF figures used in the paper.
+  PDF figures used in the paper (both `full/` and `mixed_ns/`).
 
-- `paper_manifest/`  
-  Provenance and reproducibility material:
-  - `RUNS_USED.txt`: identifiers of the exact experiment runs used for the paper
-  - `frozen_runs/`: **frozen run summaries** (CSV/JSON) for each run used in the paper
+### 2) Provenance + frozen runs (the core of reproducibility)
+- `paper_manifest/`
+  - `RUNS_USED.txt`  
+    The **exact run IDs** used for the paper.
+  - `frozen_runs/`  
+    Per-run frozen summaries (e.g., `per_sample.csv`, `variant_semantic.csv`, `pairwise_semantic.csv`, etc.).
+    These are the “source of truth” used to regenerate the aggregate results.
+  - `configs_used/`  
+    YAML configs used to produce each run (model ID, decoding, prompt template choices, suite, etc.).
+  - `scripts_used/`  
+    Scripts used to aggregate frozen runs, generate tables/figures, and export examples.
+  - `PYTHON_VERSION.txt`, `PIP_FREEZE.txt`, `GIT_COMMIT.txt`  
+    Environment + provenance metadata for traceability.
+
+### 3) Aggregate paper results (derived from frozen runs)
+- `full/` and `mixed_ns/`  
+  Pre-aggregated CSVs and LaTeX tables derived from `paper_manifest/frozen_runs/`, plus example markdown files.
 
 ## What this artifact intentionally does NOT contain
-
 - Any API keys / credentials.
-- A full “rerun from scratch” pipeline that re-queries commercial LLM APIs.
-  Re-running model inference requires paid API access and is not required to validate the paper’s measurements.
+- Any requirement that the evaluator must rerun paid model inference to validate results.
+
+We include **optional** rerun instructions for authors/curious readers with credentials, but the paper can be verified from frozen summaries alone.
+
 
 ## Quick start (no re-running)
 
@@ -51,3 +72,8 @@ pip install pandas numpy matplotlib scipy
 
 # one command: regenerate Table 1 + key figures from frozen runs
 python3 paper_manifest/reproduce_from_frozen_runs.py
+
+
+## Rerunning Inference (Optional) If you have your own AWS Bedrock credentials, you can run new evaluations using the provided configurations:
+**Steps:**
+
