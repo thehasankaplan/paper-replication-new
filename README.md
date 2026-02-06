@@ -76,7 +76,9 @@ pip install pandas numpy matplotlib scipy
 python3 paper_manifest/reproduce_from_frozen_runs.py
 
 
-## Rerunning Inference (Optional) If you have your own AWS Bedrock credentials, you can run new evaluations using the provided configurations:
+## **Rerunning Inference (Optional)**
+
+**If you have your own AWS Bedrock credentials, you can run new evaluations using the provided configurations:**
 ## Regenerate CSV outputs + figures from frozen runs
 
 The run IDs used in the paper are listed in:
@@ -209,5 +211,6 @@ Regenerate tables/figures using the same “frozen runs” commands above, point
 Notes
 Rerunning inference may incur cost depending on models and scale.
 This artifact’s primary validation path is reproducing results from the included frozen runs (no API calls).
+
 
 
