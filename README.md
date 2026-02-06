@@ -206,9 +206,11 @@ python3 paper_manifest/scripts_used/audit_freeze.py runs/new_run_claude_full
 
 Regenerate tables/figures using the same “frozen runs” commands above, pointing at your new run directory.
 
+Use the commands from the "Reproducing" section above, but replace the `paper_manifest/frozen_runs/...` paths with your new `runs/...` path.
 Notes
 Rerunning inference may incur cost depending on models and scale.
 This artifact’s primary validation path is reproducing results from the included frozen runs (no API calls).
+
 
 
 
