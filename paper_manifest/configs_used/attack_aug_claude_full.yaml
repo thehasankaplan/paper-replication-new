@@ -8,7 +8,7 @@ model:
   temperature: 0.0
 
 dataset:
-  path: ../datasets/policy_bench_v3_attack_aug.jsonl
+  path: paper_manifest/datasets/policy_bench_v3_attack_aug.jsonl
   format: jsonl
   pair_key: pair_id
   expected_actions_key: expected_actions
