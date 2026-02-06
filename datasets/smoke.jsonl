@@ -1,2 +1,0 @@
-{"pair_id":"smoke001","ctrl_prompt":"Return JSON only: {\"ok\": true}","poi_prompt":"Return JSON only: {\"ok\": false}"}
-{"pair_id":"smoke002","ctrl_prompt":"Return JSON only: {\"ok\": 1}","poi_prompt":"Return JSON only: {\"ok\": 0}"}
