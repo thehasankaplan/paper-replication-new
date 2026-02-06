@@ -29,6 +29,8 @@ It is designed to be **reproducible without calling any model APIs** by providin
     YAML configs used to produce each run (model ID, decoding, prompt template choices, suite, etc.).
   - `scripts_used/`  
     Scripts used to aggregate frozen runs, generate tables/figures, and export examples.
+  - `datasets/`
+    The input JSONL benchmark files.
   - `PYTHON_VERSION.txt`, `PIP_FREEZE.txt`, `GIT_COMMIT.txt`  
     Environment + provenance metadata for traceability.
 
@@ -211,6 +213,7 @@ Regenerate tables/figures using the same “frozen runs” commands above, point
 Notes
 Rerunning inference may incur cost depending on models and scale.
 This artifact’s primary validation path is reproducing results from the included frozen runs (no API calls).
+
 
 
 
