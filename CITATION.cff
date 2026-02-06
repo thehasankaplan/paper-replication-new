@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Indirect Prompt Injection in IAM Policy Copilots: A Structured-Output Benchmark for Least-Privilege Violations"
+message: "If you use these artifacts, please cite the associated paper."
+authors:
+  - family-names: "Author (Omitted for Review)"
+version: 0.1.0
+date-released: "2026-02-06"
+license: MIT
