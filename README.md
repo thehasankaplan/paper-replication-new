@@ -1,7 +1,4 @@
-# Indirect Prompt Injection in IAM Policy Copilots: A Structured-Output Benchmark for Least-Privilege Violations
 
-This directory is a **self-contained snapshot** of the paper-facing artifacts and the **frozen run summaries**
-used to produce the tables/figures reported in the paper.
 # Indirect Prompt Injection in IAM Policy Copilots: A Structured-Output Benchmark for Least-Privilege Violations
 
 This repository is the **replication package** for the paper:
@@ -199,7 +196,6 @@ Run inference (example command; adjust to your harness’ CLI):
 
 python3 paper_manifest/scripts_used/run_eval.py \
   --config paper_manifest/configs_used/attack_aug_claude_full.yaml \
-  --out runs/new_run_claude_full
 
 
 Postprocess the run to compute per-sample + pairwise semantic summaries.
@@ -213,6 +209,7 @@ Regenerate tables/figures using the same “frozen runs” commands above, point
 Notes
 Rerunning inference may incur cost depending on models and scale.
 This artifact’s primary validation path is reproducing results from the included frozen runs (no API calls).
+
 
 
 
