@@ -1,0 +1,21 @@
+# configs/attack_aug_nova_micro.yaml
+model:
+  provider: bedrock
+  model_id: "amazon.nova-pro-v1:0"
+  region: us-east-1
+  use_converse: true
+  max_tokens: 800
+  temperature: 0.0
+
+dataset:
+  path: ../datasets/policy_bench_v3_attack_aug.jsonl
+  format: jsonl
+  pair_key: pair_id
+  expected_actions_key: expected_actions
+  ctrl_key: prompt_control
+  poi_key:  prompt_poisoned
+
+eval:
+  task: generation
+  metrics: [exact_match]
+  sample_size_pairs: 1400    
