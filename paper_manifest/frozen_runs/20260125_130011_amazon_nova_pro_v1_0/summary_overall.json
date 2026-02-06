@@ -1,0 +1,12 @@
+{
+  "version": "custom.v4",
+  "model_id": "amazon.nova-pro-v1:0",
+  "provider": "bedrock",
+  "pairs_total": 175,
+  "pairs_evaluated": 175,
+  "counts": {
+    "ok_json": 350,
+    "wrapped_plain": 0,
+    "error_stub": 0
+  }
+}

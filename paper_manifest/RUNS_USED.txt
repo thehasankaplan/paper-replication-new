@@ -1,0 +1,9 @@
+# FULL (1400 pairs)
+runs/20260124_173448_us_anthropic_claude_sonnet_4_5_20250929_v1_0   configs/attack_aug_claude_full.yaml
+runs/20260124_194245_amazon_nova_lite_v1_0                          configs/attack_aug_nova_lite_full.yaml
+runs/20260125_064456_amazon_nova_pro_v1_0                           configs/attack_aug_nova_pro_full.yaml
+
+# MIXED_NS (175 pairs = 25 base × 7 variants)
+runs/20260125_113755_us_anthropic_claude_sonnet_4_5_20250929_v1_0   configs/attack_aug_claude_mixed_NS_full.yaml
+runs/20260125_134104_amazon_nova_lite_v1_0                          configs/attack_aug_nova_lite_mixed_NS.yaml
+runs/20260125_130011_amazon_nova_pro_v1_0                           configs/attack_aug_nova_pro_mixed_NS.yaml

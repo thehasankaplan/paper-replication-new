@@ -1,0 +1,10 @@
+{
+  "run_dir": "runs/20260125_134104_amazon_nova_lite_v1_0",
+  "raw_dir": "runs/20260125_134104_amazon_nova_lite_v1_0/raw",
+  "pairs_analyzed": 175,
+  "variants": 7,
+  "outputs": {
+    "pairwise_semantic.csv": "runs/20260125_134104_amazon_nova_lite_v1_0/pairwise_semantic.csv",
+    "variant_semantic.csv": "runs/20260125_134104_amazon_nova_lite_v1_0/variant_semantic.csv"
+  }
+}

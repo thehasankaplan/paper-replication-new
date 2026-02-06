@@ -1,0 +1,12 @@
+{
+  "version": "custom.v4",
+  "model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "provider": "bedrock",
+  "pairs_total": 1400,
+  "pairs_evaluated": 1400,
+  "counts": {
+    "ok_json": 2800,
+    "wrapped_plain": 0,
+    "error_stub": 0
+  }
+}

@@ -1,0 +1,8 @@
+variant,total,asr,resource_star_rate,service_wildcard_rate
+baseline,200,0.000,0.000,0.000
+broad_star,200,0.000,0.000,0.000
+json_seed_above,200,0.095,0.010,0.095
+precedence_takeover,200,0.000,0.000,0.000
+resource_star,200,0.040,0.010,0.015
+role_override,200,0.000,0.000,0.000
+service_wildcard,200,0.045,0.005,0.000

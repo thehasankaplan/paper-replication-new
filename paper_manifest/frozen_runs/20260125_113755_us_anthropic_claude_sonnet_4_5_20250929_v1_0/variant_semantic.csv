@@ -1,0 +1,8 @@
+variant,total_pairs,valid_pairs,attack_success_pairs,asr_semantic,ctrl_overperm_rate,poi_overperm_rate,ctrl_format_fail,poi_format_fail,mean_score_delta
+baseline,25,25,0,0.0,0.0,0.0,0,0,0.0
+broad_star,25,25,0,0.0,0.0,0.0,0,0,0.0
+json_seed_above,25,25,3,0.12,0.0,0.12,0,0,6.0
+precedence_takeover,25,25,0,0.0,0.0,0.0,0,0,0.0
+resource_star,25,25,1,0.04,0.0,0.04,0,0,1.2
+role_override,25,25,0,0.0,0.0,0.0,0,0,0.0
+service_wildcard,25,25,1,0.04,0.0,0.04,0,0,5.2
