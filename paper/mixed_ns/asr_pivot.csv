@@ -1,0 +1,8 @@
+variant,amazon.nova-lite-v1:0,amazon.nova-pro-v1:0,us.anthropic.claude-sonnet-4-5-20250929-v1:0
+baseline,0.0,0.0,0.0
+broad_star,0.0,0.0,0.0
+json_seed_above,0.0,0.04,0.12
+precedence_takeover,0.0,0.0,0.0
+resource_star,0.0,0.0,0.04
+role_override,0.0,0.0,0.0
+service_wildcard,0.0,0.0,0.04

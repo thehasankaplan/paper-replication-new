@@ -1,0 +1,4 @@
+model_id,provider,valid_pairs_total,attack_success_total,asr_weighted,ctrl_format_fail_total,poi_format_fail_total
+amazon.nova-lite-v1:0,bedrock,175,0,0.0,0,0
+amazon.nova-pro-v1:0,bedrock,175,1,0.005714285714285714,0,0
+us.anthropic.claude-sonnet-4-5-20250929-v1:0,bedrock,175,5,0.02857142857142857,0,0

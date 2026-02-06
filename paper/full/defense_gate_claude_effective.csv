@@ -1,0 +1,8 @@
+variant,pairs,ctrl_accept_rate,poi_accept_rate,poi_reject_rate,attack_success_rate_raw,effective_asr_if_block_rejects
+baseline,200,1.0,1.0,0.0,0.0,0.0
+broad_star,200,1.0,1.0,0.0,0.0,0.0
+json_seed_above,200,1.0,0.905,0.0949999999999999,0.095,0.08597500000000001
+precedence_takeover,200,1.0,1.0,0.0,0.0,0.0
+resource_star,200,1.0,0.96,0.04,0.04,0.0384
+role_override,200,1.0,1.0,0.0,0.0,0.0
+service_wildcard,200,1.0,0.955,0.045,0.045,0.042975
