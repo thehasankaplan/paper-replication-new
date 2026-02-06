@@ -75,7 +75,7 @@ pip install -U pip
 pip install pandas numpy matplotlib scipy
 
 # one command: regenerate Table 1 + key figures from frozen runs
-python3 paper_manifest/reproduce_from_frozen_runs.py
+python3 paper_manifest/scripts_used/collect_results_matrix.py
 
 
 ## **Rerunning Inference (Optional)**
@@ -213,6 +213,7 @@ Regenerate tables/figures using the same “frozen runs” commands above, point
 Notes
 Rerunning inference may incur cost depending on models and scale.
 This artifact’s primary validation path is reproducing results from the included frozen runs (no API calls).
+
 
 
 
